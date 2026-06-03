@@ -1,8 +1,16 @@
+let     rock = document.querySelector( ".rock" );
+let     paper = document.querySelector( ".paper" );
+let     scissors = document.querySelector( ".scissors" );
+let     score = document.querySelector( ".score" );
+
+rock.addEventListener( "click", ()=> {console.log("Chamou!!")});
+
+
 let     humanScore;
 let     computerScore;
-const   rock = "rock";
-const   paper = "paper";
-const   scissors = "scissors";
+const   rock1 = "rock";
+const   paper1 = "paper";
+const   scissors1 = "scissors";
 
 humanScore = 0;
 computerScore = 0;
@@ -16,22 +24,6 @@ function    computerChoice()
         return (paper);
     else
         return (scissors);
-}
-
-function humanChoice()
-{
-    let     choice;
-
-    while (1)
-    {
-        choice = prompt("Rock, Paper or Scissors?").toLocaleLowerCase();
-        if (choice !== rock && choice !== paper && choice !== scissors)
-        {
-            alert("Invalid choice. Try: Rock, Paper, Scissors");
-            continue ;
-        }
-        return (choice);
-    }
 }
 
 function checkWinner(player1, player2)
@@ -58,7 +50,7 @@ function checkWinner(player1, player2)
     return (winner);
 }
 
-function    chooseWinner(winner)
+function    chooseWinner( winner )
 {
     if (winner === "You")
     {
@@ -73,7 +65,7 @@ function    chooseWinner(winner)
     alert(`Score:\nYOU ${humanScore} - ${computerScore} CPU`);
 }
 
-function    playRound(player1, player2)
+function    playRound(player1, player2 )
 {
     return (chooseWinner(checkWinner(player1, player2)));
 }
@@ -88,7 +80,3 @@ function playGame()
 }
 
 playGame();
-//alert(humanChoice());
-//alert(computerChoice());
-/*for (let i = 0; i < 20; i++)
-    computerChoice();*/

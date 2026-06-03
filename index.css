@@ -1,0 +1,39 @@
+h1 {
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    background-color: #272727;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.choice-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.choice-btn {
+    border: none;
+    margin: 8px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 1.1em;
+    background-color: #ffffff;
+    transition: all .05s;
+}
+
+.choice-btn:hover
+{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.choice-btn:active
+{
+    cursor: pointer;
+    transform: scale( .9 );
+}
