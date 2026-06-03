@@ -1,7 +1,32 @@
-h1 {
-    width: 100%;
+h1, h2, .info, label, input[type="text"] {
     color: white;
     text-align: center;
+}
+
+.score-box {
+    max-width: 50%;
+    min-width: 190px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 16px auto;
+}
+
+.info, h2 { margin: 0; }
+
+input
+{
+    all: unset;
+    width: 30px;
+    margin: 0 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+label, .info { 
+    font-weight: 501;
+    font-size: 1.2em;
 }
 
 .container {

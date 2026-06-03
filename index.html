@@ -9,7 +9,15 @@
 <body>
     <div class="container">
         <h1>Rock Paper and Scissors</h1>
-        <div class="score"></div>
+        <div class="score-box">
+            <h2>Score</h2>
+            <div class="info">
+                <label for="human">You</label>
+                <input type="text" id="human" readonly value="0"> :
+                <input type="text" id="cpu" readonly value="0">
+                <label for="cpu">CPU</label>
+            </div>
+        </div>
         <div class="choice-container">
             <button class="rock choice-btn">Rock</button>
             <button class="paper choice-btn">Paper</button>
